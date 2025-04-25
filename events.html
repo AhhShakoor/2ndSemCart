@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>eTron</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="Games Page\favicon.jpg" type="image/x-icon">
+
+</head>
+<body>
+    <div class="neon-border">
+        <header>
+            <div class="logo-button">
+                <a href="index.html">
+                    <img src="logoetron.jpg" alt="Website Logo" class="logo">
+                </a>
+            </div>
+            <nav class="navbar">
+                <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
+                <label for="menu-toggle" class="menu-icon">☰</label>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="consoles.html">Consoles</a></li>
+                    <li><a href="events.html">PC Build Parts</a></li>
+                    <li><a href="upcominggames.html">Upcoming Games</a></li>
+                    <li><a href="queries.html">FAQ's & Queries</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+
+            </nav>
+            <form class="search-bar" action="/search" method="GET">
+                <input type="checkbox" id="search-toggle" class="search-checkbox">
+                <label for="search-toggle" class="search-icon">
+                    <i class="fas fa-search"></i>
+                </label>
+                <div class="search-panel">
+                    <input type="text" name="q" placeholder="Search..." />
+                </div>
+            </form>
+            <div class="icon-cart">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1"/>
+                </svg>
+                <span>0</span>
+            </div>
+        </header>
+    </div>
+    <header class="heading">
+        <h2>Internal Hardware Components</h2>
+    </header>
+    <div class="listProduct"></div>
+    <div class="order-container">
+        
+        <div class="parts-section">
+            <h2>Processors</h2>
+            <div class="parts-grid" id="processors">
+                <!-- Will be populated by JavaScript -->
+            </div>
+        </div>
+
+        <div class="parts-section">
+            <h2>Graphic Cards</h2>
+            <div class="parts-grid" id="graphics">
+                <!-- Will be populated by JavaScript -->
+            </div>
+        </div>
+
+        <div class="parts-section">
+            <h2>Motherboards</h2>
+            <div class="parts-grid" id="motherboards">
+                <!-- Will be populated by JavaScript -->
+            </div>
+        </div>
+
+        <div class="parts-section">
+            <h2>Memory (RAM)</h2>
+            <div class="parts-grid" id="memory">
+                <!-- Will be populated by JavaScript -->
+            </div>
+        </div>
+
+        <div class="parts-section">
+            <h2>Storage Devices</h2>
+            <div class="parts-grid" id="storage">
+                <!-- Will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+    
+    <div class="cartTab">
+        <h1>Shopping Cart</h1>
+        <div class="listCart">
+            <!-- Cart items will be added here -->
+        </div>
+        <div class="btn">
+            <button class="close">CLOSE</button>
+            <a href="checkout.html" class="checkout"><button>CHECK OUT</button></a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="vertical-line"></div>
+        <div class="social-links">
+            <div class="social-item">
+                <img src="Icon\Facebook_logo_(square).png" alt="Facebook Logo" class="social-icon">
+                <span><b>  -  @etron/facebook</b></span>
+            </div>
+            <div class="social-item">
+                <img src="Icon\icon512_rounded.png" alt="Instagram Logo" class="social-icon">
+                <span><b> -  Instagram</b></span>
+            </div>
+            <div class="social-item">
+                <img src="Icon\x.png" alt="Threads Logo" class="social-icon">
+                <span><b> -  Threads</b></span>
+            </div>
+            <div class="social-item">
+                <img src="Icon\red.png" alt="Discord Logo" class="social-icon">
+                <span><b> -  Discord</b></span>
+            </div>
+            <div class="social-item">
+                <img src="Icon\lol.png" alt="Reddit Logo" class="social-icon">
+                <span><b> -  Reddit</b></span>
+            </div>
+        </div>
+        <div class="website-link">
+            <i class="fas fa-globe"></i>
+            <span class="website-text"> - www.mywebsite.com</span>
+        </div>
+        <img src="comicfooter.jpg" alt="comicfooter" class="comicfooter">
+        <p class="footp1"><strong> 📍  Address : </strong> 185, Hill Street, Dehiwala-Mount</p>
+        <p class="footp2"><strong> 📍  Address : </strong> 201, Kandy, Kandy</p>
+        <p>2024 Neon Gaming. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

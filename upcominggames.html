@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>eTron</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="Games Page\favicon.jpg" type="image/x-icon">
+
+</head>
+<body>
+    <div class="neon-border">
+        <header>
+            <div class="logo-button">
+                <a href="index.html">
+                    <img src="logoetron.jpg" alt="Website Logo" class="logo">
+                </a>
+            </div>
+            <nav class="navbar">
+                <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
+                <label for="menu-toggle" class="menu-icon">☰</label>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="consoles.html">Consoles</a></li>
+                    <li><a href="events.html">PC Build Parts</a></li>
+                    <li><a href="upcominggames.html">Upcoming Games</a></li>
+                    <li><a href="queries.html">FAQ's & Queries</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+
+            </nav>
+            <form class="search-bar" action="/search" method="GET">
+                <input type="checkbox" id="search-toggle" class="search-checkbox">
+                <label for="search-toggle" class="search-icon">
+                    <i class="fas fa-search"></i>
+                </label>
+                <div class="search-panel">
+                    <input type="text" name="q" placeholder="Search..." />
+                </div>
+            </form>
+            <div class="icon-cart">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1"/>
+                </svg>
+                <span>0</span>
+            </div>
+        </header>
+    </div>
+        <!-- Upcoming Games Section -->
+        <section class="up-section">
+            <h2 class="uph2">Upcoming Games</h2>
+            <p class="up-description">Check out the most anticipated games releasing soon. Get ready for epic adventures, intense battles, and unforgettable stories!</p>
+    
+            <!-- Upcoming Games Container -->
+            <div class="up-container">
+                <!-- Game 1 -->
+                <div class="up-game">
+                    <div class="up-image-container">
+                        <img src="updated game 1.jpg" alt="Game 1" class="up-image">
+                        <div class="up-release-date">Release Date:  March 20th 2025</div>
+                    </div>
+                    <h3 class="up-title">assassin's creed shadows</h3>
+                    <p class="up-game-description">Experience an epic action-adventure story set in Feudal Japan! Become a lethal shinobi Assassin and powerful, legendary samurai as you explore a beautiful open world in a time of chaos.</p>
+                </div>
+    
+                <!-- Game 2 -->
+                <div class="up-game">
+                    <div class="up-image-container">
+                        <img src="updated game 3.jpg" alt="Game 2" class="up-image">
+                        <div class="up-release-date">Release Date: August 20, 2025</div>
+                    </div>
+                    <h3 class="up-title">Remnant: From the Ashes</h3>
+                    <p class="up-game-description">Remnant: From the Ashes is a third-person survival action shooter set in a post-apocalyptic world overrun by monstrous creatures.</p>
+                </div>
+    
+                <!-- Game 3 -->
+                <div class="up-game">
+                    <div class="up-image-container">
+                        <img src="Doom the dark ages.jpeg" alt="Game 3" class="up-image">
+                        <div class="up-release-date">Release Date: May 15, 2025</div>
+                    </div>
+                    <h3 class="up-title">Doom the dark ages</h3>
+                    <p class="up-game-description">Experience an epic cinematic story of the DOOM Slayer's rage in DOOM: The Dark Ages. Bound to serve as the super weapon of gods and kings, the Slayer fends off demon hordes as their leader seeks to destroy the Slayer and become the only one that is feared.</p>
+                </div>
+
+                 <!-- Game 3 -->
+                <div class="up-game">
+                    <div class="up-image-container">
+                        <img src="updated game 6.jpg" alt="Game 3" class="up-image">
+                        <div class="up-release-date">Release Date: March 15, 2025</div>
+                    </div>
+                    <h3 class="up-title">Call of Duty</h3>
+                    <p class="up-game-description">A Battle Royal and a multiplayer game t enjoy with you friends</p>
+                </div>
+                <!-- Game 3 -->
+                <div class="up-game">
+                    <div class="up-image-container">
+                        <img src="updated game 5 .jpg" alt="Game 3" class="up-image">
+                        <div class="up-release-date">Release Date: March 15, 2025</div>
+                    </div>
+                    <h3 class="up-title">Avi Bot</h3>
+                    <p class="up-game-description">A strategic RPG with deep storytelling of the loser Avinash's redemption arc.</p>
+                </div>
+                <!--dd more upcoming games here -->
+            </div>
+        </section>
+    </div>
+
+    <!-- Cart Tab -->
+    <div class="cartTab">
+        <h1>Shopping Cart</h1>
+        <div class="listCart">
+            <!-- Cart items will be added here -->
+        </div>
+        <div class="btn">
+            <button class="close">CLOSE</button>
+            <a href="checkout.html" class="checkout"><button>CHECK OUT</button></a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="vertical-line"></div>
+        <div class="social-links">
+            <div class="social-item">
+                <img src="Icon\Facebook_logo_(square).png" alt="Facebook Logo" class="social-icon">
+                <span><b>  -  @etron/facebook</b></span>
+            </div>
+            <div class="social-item">
+                <img src="Icon\icon512_rounded.png" alt="Instagram Logo" class="social-icon">
+                <span><b> -  Instagram</b></span>
+            </div>
+            <div class="social-item">
+                <img src="Icon\x.png" alt="Threads Logo" class="social-icon">
+                <span><b> -  Threads</b></span>
+            </div>
+            <div class="social-item">
+                <img src="Icon\red.png" alt="Discord Logo" class="social-icon">
+                <span><b> -  Discord</b></span>
+            </div>
+            <div class="social-item">
+                <img src="Icon\lol.png" alt="Reddit Logo" class="social-icon">
+                <span><b> -  Reddit</b></span>
+            </div>
+        </div>
+        <div class="website-link">
+            <i class="fas fa-globe"></i>
+            <span class="website-text"> - www.mywebsite.com</span>
+        </div>
+        <img src="comicfooter.jpg" alt="comicfooter" class="comicfooter">
+        <p class="footp1"><strong> 📍  Address : </strong> 185, Hill Street, Dehiwala-Mount</p>
+        <p class="footp2"><strong> 📍  Address : </strong> 201, Kandy, Kandy</p>
+        <p>2024 Neon Gaming. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>

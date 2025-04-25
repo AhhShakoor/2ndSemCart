@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>eTron</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="Games Page\favicon.jpg" type="image/x-icon">
+
+</head>
+<body>
+    <div class="neon-border">
+        <header>
+            <div class="logo-button">
+                <a href="index.html">
+                    <img src="logoetron.jpg" alt="Website Logo" class="logo">
+                </a>
+            </div>
+            <nav class="navbar">
+                <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
+                <label for="menu-toggle" class="menu-icon">☰</label>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="consoles.html">Consoles</a></li>
+                    <li><a href="events.html">PC Build Parts</a></li>
+                    <li><a href="upcominggames.html">Upcoming Games</a></li>
+                    <li><a href="queries.html">FAQ's & Queries</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+
+            </nav>
+            <form class="search-bar" action="/search" method="GET">
+                <input type="checkbox" id="search-toggle" class="search-checkbox">
+                <label for="search-toggle" class="search-icon">
+                    <i class="fas fa-search"></i>
+                </label>
+                <div class="search-panel">
+                    <input type="text" name="q" placeholder="Search..." />
+                </div>
+            </form>
+            <div class="icon-cart">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1"/>
+                </svg>
+                <span>0</span>
+            </div>
+        </header>
+    </div>
+
+    <!-- Cart Container (80% width) -->
+    <div class="cart-container">
+        <h2>Customer Order</h2>
+        <div class="cart-items" id="cartItems">
+            <!-- Items will be dynamically inserted here -->
+        </div>
+        <div class="customer-order-total">
+            <div class="total-row">
+                <span>Total:</span>
+                <span id="customerOrderTotal">$0.00</span>
+            </div>
+        </div>
+
+        <div class="cart-summary">
+            <h2>Your Cart</h2>
+            <div class="cart-items" id="cartItemsContainer">
+                <!-- Cart items will appear here dynamically -->
+            </div>
+            <div class="cart-totals">
+                <div class="total-row">
+                    <span>Subtotal:</span>
+                    <span id="cartSubtotal">$0.00</span>
+                </div>
+                <div class="total-row">
+                    <span>Shipping:</span>
+                    <span id="cartShipping">$10.00</span>
+                </div>
+                <div class="total-row grand-total">
+                    <span>Total:</span>
+                    <span id="cartTotal">$10.00</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Button Group -->
+        <div class="cart-buttons">
+            <button id="saveFavorite" class="cart-btn favorite-btn">
+                <i class="fas fa-heart"></i> Save as Favorite
+            </button>
+            <button id="buyNow" class="cart-btn buynow-btn">
+                <i class="fas fa-shopping-bag"></i> Buy Now
+            </button>
+            <button id="applyFavorite" class="cart-btn favorite-btn">
+                <i class="fas fa-star"></i> Apply Favorites
+            </button>
+            <button id="continueShopping" class="cart-btn continue-btn">
+                <i class="fas fa-arrow-left"></i> Continue Shopping
+            </button>
+        </div>
+    </div>
+
+    <div class="right">
+        <h1>Checkout</h1>
+        <div class="forms-container">
+            <!-- Personal Details Form -->
+            <form class="checkout-form" id="personalForm">
+                <h3><i class="fas fa-user"></i> Personal Details</h3>
+                <div class="form-group">
+                <input type="text" id="fullName" required placeholder=" ">
+                <label for="fullName">Full Name</label>
+                </div>
+                <div class="form-group">
+                <input type="email" id="email" required placeholder=" ">
+                <label for="email">Email</label>
+                </div>
+                <div class="form-group">
+                <input type="tel" id="phone" required placeholder=" ">
+                <label for="phone">Phone Number</label>
+                </div>
+            </form>
+            
+            <!-- Delivery Details Form -->
+            <form class="checkout-form" id="deliveryForm">
+                <h3><i class="fas fa-truck"></i> Delivery Information</h3>
+                <div class="form-group">
+                <textarea id="address" required placeholder=" "></textarea>
+                <label for="address">Street Address</label>
+                </div>
+                <div class="form-row">
+                <div class="form-group">
+                    <input type="text" id="city" required placeholder=" ">
+                    <label for="city">City</label>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="postalCode" required placeholder=" ">
+                    <label for="postalCode">Postal Code</label>
+                </div>
+                </div>
+                <div class="form-group">
+                <select id="country" required>
+                    <option value="" disabled selected> </option>
+                    <option value="US">United States</option>
+                    <option value="UK">United Kingdom</option>
+                    <option value="SL">Sri Lanka</option>
+                </select>
+                <label for="country">Country</label>
+                </div>
+            </form>
+            
+            <!-- Payment Details Form -->
+            <form class="checkout-form" id="paymentForm">
+                <h3><i class="fas fa-credit-card"></i> Payment Method</h3>
+                <div class="payment-method">
+                <input type="radio" id="creditCard" name="payment" value="credit" checked>
+                <label for="creditCard">Credit Card</label>
+                <input type="radio" id="paypal" name="payment" value="paypal">
+                <label for="paypal">PayPal</label>
+                </div>
+                
+                <div id="creditCardFields">
+                <div class="form-group">
+                    <input type="text" id="cardNumber" placeholder="Enter your card number" required>
+                    <label for="cardNumber">Card Number</label>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                    <input type="text" id="expiry" placeholder="" required>
+                    <label for="expiry">MM/YY</label>
+                    </div>
+                    <div class="form-group">
+                    <input type="text" id="cvv" placeholder=" " required>
+                    <label for="cvv">CVV</label>
+                    </div>
+                </div>
+                </div>
+
+                <button id="payButton" class="cart-btn pay-btn">
+                    <i class="fas fa-credit-card"></i> Place Order!
+                </button>
+                
+            </form>
+            </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="checkout.js"></script>
+
+    <footer>
+        <div class="vertical-line"></div>
+        <div class="social-links">
+            <div class="social-item">
+                <img src="Icon\Facebook_logo_(square).png" alt="Facebook Logo" class="social-icon">
+                <span><b>  -  @etron/facebook</b></span>
+            </div>
+            <div class="social-item">
+                <img src="Icon\icon512_rounded.png" alt="Instagram Logo" class="social-icon">
+                <span><b> -  Instagram</b></span>
+            </div>
+            <div class="social-item">
+                <img src="Icon\x.png" alt="Threads Logo" class="social-icon">
+                <span><b> -  Threads</b></span>
+            </div>
+            <div class="social-item">
+                <img src="Icon\red.png" alt="Discord Logo" class="social-icon">
+                <span><b> -  Discord</b></span>
+            </div>
+            <div class="social-item">
+                <img src="Icon\lol.png" alt="Reddit Logo" class="social-icon">
+                <span><b> -  Reddit</b></span>
+            </div>
+        </div>
+        <div class="website-link">
+            <i class="fas fa-globe"></i>
+            <span class="website-text"> - www.mywebsite.com</span>
+        </div>
+        <img src="comicfooter.jpg" alt="comicfooter" class="comicfooter">
+        <p class="footp1"><strong> 📍  Address : </strong> 185, Hill Street, Dehiwala-Mount</p>
+        <p class="footp2"><strong> 📍  Address : </strong> 201, Kandy, Kandy</p>
+        <p>2024 Neon Gaming. All rights reserved.</p>
+    </footer>
+</body>
+</html>
